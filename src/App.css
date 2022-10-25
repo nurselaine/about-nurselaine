@@ -1,0 +1,18 @@
+.App {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+
+}
+
+/* #background-video{
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+} */
+
+section {
+  border: red solid 1px;
+  height: 100vh;
+}
