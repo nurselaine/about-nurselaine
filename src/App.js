@@ -14,10 +14,10 @@ function App() {
         <Home />
       </section>
       <section>
-        <About />
+        <Portfolio />
       </section>
       <section>
-        <Portfolio />
+        <About />
       </section>
       <section>
         <Contact />

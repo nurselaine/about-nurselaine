@@ -1,33 +1,28 @@
-import React from "react";
-import { MouseParallaxContainer, MouseParallaxChild } from "react-parallax-mouse";
-import Tilt from 'react-parallax-tilt';
+
 import './Home.scss';
 
 export default function Home() {
+
+const parallax = (e) => {
+  document.querySelectorAll(".parallax-wrap span").forEach((shift) => {
+    const position = shift.getAttribute("value");
+    const x = (window.innerWidth - e.pageX * position) / 90;
+    const y = (window.innerHeight - e.pageY * position) / 90;
+
+    shift.style.transform = `translateX(${x}px) translateY(${y}px)`;
+  });
+}
+
+
   return (
-    <div className="home-page">
-      <Tilt>
-      <h1 style={{color: 'white', position: 'absolute', top: '45vh', left: '35vw', 'font-weight': '900', fontSize: '3rem'}}>Hello, I'm Elaine. <br/> <span style={{fontSize: '1.5rem'}}>I'm a Full-Stack Software Engineer</span></h1>
-        <div>
-          <img className="square" src="../../assets/img/3d-abstract-wave-pattern-background.jpg" alt="square" style={{height: '100vh', width: '100vw'}}/>
-        </div>
-      </Tilt>
-      {/* <Tilt>
-        <div style={{ position: 'absolute', right: '200px', top: '100px' }}>
-          <img className="square" src="../../assets/img/square.png" alt="square" />
-        </div>
-      </Tilt>
-      <Tilt>
-        <div style={{ position: 'absolute', left: '600px', top: '150px', width: '50%', height: '50%' }}>
-          <img className="square" src="../../assets/img/square.png" alt="square" />
-        </div>
-      </Tilt> */}
-      {/* <MouseParallaxContainer>
-        <MouseParallaxChild factorX={0.03} factorY={0.05} >
-          <img className="octagon" src="../../assets/img/square.png" alt="octogon" />
-          add linear gradient #ecbbd2 #9d66f0
-        </MouseParallaxChild>
-      </MouseParallaxContainer> */}
-    </div>
+<div class="parallax-wrap" onMouseMove={parallax}>
+  {/* <div value="-15"><img src="../../../public/img/octagon.png" alt=""/></div> */}
+  <span value='-15'></span>
+  <span value="5"></span>
+  <span value="30"></span>
+  <span value="-5"></span>
+  <span value="15"></span>
+  <h2>Hello. I'm Elaine</h2>
+</div>
   )
 }
