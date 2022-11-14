@@ -1,4 +1,5 @@
 import React from "react";
+import Navbar from "../navbar/Navbar";
 import './Contact.scss';
 
 export default function Contact(){
@@ -15,14 +16,17 @@ export default function Contact(){
   
   
     return (
-  <div class="contact-parallax" onMouseMove={parallax}>
-    {/* <div value="-15"><img src="../../../public/img/octagon.png" alt=""/></div> */}
-    <span value='10'></span>
-    <span value="5"></span>
-    <span value="5"></span>
-    <span value="-5"></span>
-    <span value="5"></span>
-    <h2>Contact Me</h2>
-  </div>
+      <section>
+        <Navbar />
+        <div className="contact-parallax" onMouseMove={parallax}>
+          {/* <div value="-15"><img src="../../../public/img/octagon.png" alt=""/></div> */}
+          <span value='10'></span>
+          <span value="5"></span>
+          <span value="5"></span>
+          <span value="-5"></span>
+          <span value="5"></span>
+          <h2>Contact Me</h2>
+        </div>
+      </section>
     )
 }
