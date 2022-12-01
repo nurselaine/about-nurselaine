@@ -2,11 +2,11 @@
 
 ### Welcome to my portfolio
   I've linked some of my projects on github here
-    - Hair By Loann
-    - Brain
-    - Slack n' Snack
-    - Meal Wheel
-    - Simple Virtual Store
+  - Hair By Loann
+  - Brain
+  - Slack n' Snack
+  - Meal Wheel
+  - Simple Virtual Store
 
 #### Libraries & Resources
 - React Browser Router for page navigation

@@ -1,25 +1,87 @@
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Concert+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+$BackgroundColor: '#f0f8e3';
 $Titlefont: 'Anton', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
-article{
-  position: absolute;
-  left: 90px;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --color-primary: #f6aca2;
+  --color-secondary: #f49b90;
+  --color-tertiary: #f28b7d;
+  --color-quaternary: #f07a6a;
+  --color-quinary: #ee6352;
+  /*
+  --color-primary: #5192ED;
+  --color-secondary: #69A1F0;
+  --color-tertiary: #7EAEF2;
+  --color-quaternary: #90BAF5;
+  --color-quinary: #A2C4F5;
+  */
+}
+
+.content {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.text_shadows {
+  text-shadow: 3px 3px 0 var(--color-secondary), 6px 6px 0 var(--color-tertiary),
+    9px 9px var(--color-quaternary), 12px 12px 0 var(--color-quinary);
+  font-family: bungee, sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: calc(2rem + 5vw);
+  text-align: center;
+  margin: 0;
+  color: var(--color-primary);
+  //color: transparent;
+  //background-color: white;
+  //background-clip: text;
+  animation: shadows 1.2s ease-in infinite, move 1.2s ease-in infinite;
+  letter-spacing: 0.4rem;
+}
+
+@keyframes shadows {
+  0% {
+    text-shadow: none;
+  }
+  10% {
+    text-shadow: 3px 3px 0 var(--color-secondary);
+  }
+  20% {
+    text-shadow: 3px 3px 0 var(--color-secondary),
+      6px 6px 0 var(--color-tertiary);
+  }
+  30% {
+    text-shadow: 3px 3px 0 var(--color-secondary),
+  }
+}
+
+#home article{
+  // position: absolute;
+  // left: 90px;
   
   h2 {
     font-family: $Titlefont;
-    text-align: left;
+    text-align: center;
     z-index: 2;
     color: #4e5a98;
     margin-right: 50vw;
     font-size: 7rem;
-    font-weight: 700;
-    text-shadow: 5px 5px 0px #485389;
+    font-weight: 800;
+    // text-shadow: 5px 5px 0px #485389;
     // margin-top: -15vh;
   }
 
   p{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: bungee, sans-serif;
     font-size: 3rem;
+    display: block;
   }
 
   button{
@@ -33,11 +95,12 @@ article{
 
 .parallax-wrap {
   position: relative;
-  background-image: url('../../../public/assets/img/home-grid.png');
+  background: #f0f8e3;
   width: 100%;
   height: 100vh;
   overflow: hidden;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 

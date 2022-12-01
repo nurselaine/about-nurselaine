@@ -1,5 +1,6 @@
 import React from 'react';
 import Navbar from '../navbar/Navbar'
+import Portfolio from '../portfolio/Portfolio';
 import './Home.scss';
 
 export default function Home() {
@@ -19,20 +20,20 @@ export default function Home() {
     <section>
       <Navbar />
       <div className="parallax-wrap" onMouseMove={parallax}>
-        <div value="-5"><img src="./assets/img/nurse.png" alt="" /></div>
-        <div value="5"><img src="./assets/img/computer.png" alt="" /></div>
-        <div value="5"><img src="./assets/img/pill.png" alt="" /></div>
-        <div value="-5"><img src="./assets/img/code2.png" alt="" /></div>
-        <div value="5"><img src="./assets/img/pill.png" alt="" /></div>
-        <div value="-5"><img src="./assets/img/desktop.png" alt="" /></div>
-        <div value="5"><img src="./assets/img/syringe.png" alt="" /></div>
-        <div value="-5"><img src="./assets/img/needle.png" alt="" /></div>
-        <article>
-          <h2>I'm Elaine</h2>
-          <p>I'm a Full-Stack Engineer</p>
-          <button>About Me</button>
+        <div value="-5"><img src="./assets/img/scalene-triangle.png" alt="" /></div>
+        <div value="5"><img src="./assets/img/star.png" alt="" /></div>
+        <div value="5"><img src="./assets/img/octagon.png" alt="" /></div>
+        <div value="-5"><img src="./assets/img/trapezoid.png" alt="" /></div>
+        <div value="5"><img src="./assets/img/heptagon.png" alt="" /></div>
+        <div value="-5"><img src="./assets/img/parallelogram.png" alt="" /></div>
+        <div value="5"><img src="./assets/img/diamond.png" alt="" /></div>
+        <div value="-5"><img src="./assets/img/line.png" alt="" /></div>
+        <article id='home' className='content'>
+          <h2 className='text_shadows'>I'm Elaine</h2>
         </article>
+        <p>I'm a Full-Stack Engineer</p>
       </div>
+        <Portfolio />
     </section>
   )
 }
