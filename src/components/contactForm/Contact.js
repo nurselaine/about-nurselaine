@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import { Button, createStyles, Input, Textarea } from "@mantine/core";
+import { Box, Button, createStyles, Image, Input, Textarea } from "@mantine/core";
+import data from '../../data/project_data.json';
 import { send } from "emailjs-com";
 
 import './Contact.scss';
@@ -54,6 +55,21 @@ export default function Contact() {
     <div id="contact">
       <section className="content">
         <h2 className="text_shadows">Get In Touch</h2>
+        <section id='contact'>
+          <Box style={{ display: 'flex', flexDirection: 'row', flexwrap: 'wrap', justifyContent: 'space-evenly', width: '50%', margin: 'auto' }}>
+            {
+              data.contact.map((social, i) => (
+                <Image
+                  src={social}
+                  height={40}
+                  width={40}
+                  alt="social"
+                  key={`social-${i}`}
+                />
+              ))
+            }
+          </Box>
+        </section>
       </section>
       <form id="form">
         <Input.Wrapper
@@ -100,8 +116,8 @@ export default function Contact() {
           m="md"
         />
       </form>
-      <Button 
-        type="submit" 
+      <Button
+        type="submit"
         color="red"
         radius="lg"
         size="sm"

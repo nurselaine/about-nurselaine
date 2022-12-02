@@ -50,5 +50,7 @@
       "site": "https://my-calendar-app-nurselaine.netlify.app",
       "active": true
     }
-  ]
+  ],
+  "skills": ["./assets/img/js.png", "./assets/img/java.png", "./assets/img/react.png","./assets/img/node-js.png", "./assets/img/html.png", "./assets/img/css.png", "./assets/img/postgre.png","./assets/img/mongodb.png", "./assets/img/socketio.png", "./assets/img/heroku.png", "./assets/img/git.png" ],
+  "contact": ["./assets/img/profile.png", "./assets/img/linkedin.png", "./assets/img/gmail.png", "./assets/img/github.png"]
 }

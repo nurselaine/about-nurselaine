@@ -3,12 +3,23 @@ $BackgroundColor: #f0f8e3;
 
 #portfolio{
   background: $BackgroundColor;
-  padding-top: 2rem;
+  padding: 5rem;
 
   .project-desc{
     display: flex;
     flex-wrap: wrap;
     margin: auto;
     min-width: 400px;
+  }
+
+  h2.details{
+    font-family: bungee, sans-serif;
+    color: #7e3de7;
+    text-shadow: 3px 3px 0 var(--detail-quinary), 6px 6px 0 var(--detail-quanternary);
+      // 12px 12px 0 var(--detail-quinary)
+    font-size: 2rem;
+    display: block;
+    padding: 2rem;
+    text-align: center;
   }
 }
