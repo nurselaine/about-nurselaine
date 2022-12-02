@@ -1,4 +1,5 @@
 import React from 'react';
+import Contact from '../contactForm/Contact';
 import Navbar from '../navbar/Navbar'
 import Portfolio from '../portfolio/Portfolio';
 import './Home.scss';
@@ -31,9 +32,10 @@ export default function Home() {
         <article id='home' className='content'>
           <h2 className='text_shadows'>I'm Elaine</h2>
         </article>
-        <p>I'm a Full-Stack Engineer</p>
+        <p className='details'>I'm a Full-Stack Engineer</p>
       </div>
         <Portfolio />
+        <Contact />
     </section>
   )
 }

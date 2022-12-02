@@ -1,47 +1,14 @@
-.portfolio-parallax {
-  position: relative;
-  background-color:whitesmoke;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  // display: flex;
-  justify-content: center;
-  align-items: center;
-}
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+$BackgroundColor: #f0f8e3;
 
-#header{
-  height: 30vh;
-  margin-top: 60px;
-  position: relative;
-  border: 1px red solid;
-
-  h2 {
-    position: absolute;
-    margin: 0;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 5em;
-    z-index: 2;
-    text-align: center;
-  }
-}
-
-#portfolio article{
-  display: flex;
-  flex-direction: row;
+#portfolio{
+  background: $BackgroundColor;
+  padding-top: 2rem;
 
   .project-desc{
-    text-align: left;
-    padding-top: 50%;
-  }
-}
-
-#portfolio article:nth-child(odd){
-  display: flex;
-  flex-direction: row-reverse;
-  .project-desc{
-    text-align: left;
-    padding-top: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    min-width: 400px;
   }
 }

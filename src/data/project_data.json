@@ -1,0 +1,54 @@
+{
+  "project_data": [
+    { 
+      "project_name": "WenJobs", 
+      "project_desc": "Targeted Job Search tool", 
+      "project_src": "./assets/img/job-search.png", 
+      "images": ["./assets/img/wenjob-1.png", "./assets/img/wenjob-2.png", "./assets/img/wenjob-3.png"], 
+      "tech": ["JavaScript", "React", "Ant UI", "React Router Dom", "Google Real-time Database","Sass", "HTML", "Express", "Node", "Puppeteer", "Node-cron", "Jest", "Render", "Firebase Hosting"],
+      "info": "The concept of WenJobs was a collaborative effort along with a Web3 Job Recruiter who played the role of our client. Using the concepts learned over the past six months, we developed a job board that displays updated Web3 career opportunties and connects to users LinkedIn connections to help find companies within a user's network. My focus developing this project was utilizing webscraping technologies, so users would gain access to the newest job opportunities from the most popular Web3 job boards! Having the opportunity to work with a client was a rewarding experience. I was able to build out my client's vision and gain a higher level of client-developer communication.",
+      "stretch": ["Utilize PostgreSQL database to manage company data with user connections", "Utilize AngelList & Crunchbase APIs to display data on the companies within the database", "Request for LinkedIn Full-Profile access permissions to include a user's first, second, and third degree connections within the targeted job search"],
+      "github": "https://github.com/Wen-Jobs",
+      "site": "www.wenjobs.xyz",
+      "active": true
+    },
+    { 
+      "project_name": "Hair By Loann", 
+      "project_desc": "Cosmetologist Business Website", 
+      "project_src": "./assets/img/hair-salon.png",
+      "images": ["./assets/img/hairbyloann-1.png", "./assets/img/hairbyloann-2.png", "./assets/img/hairbyloann-3.png"],
+      "tech": ["JavaScript", "React", "HTML", "CSS", "Express", "Google Firestore", "Bootstrap", "Google API", "Twilio", "Heroku"],
+      "info": "After meeting Loann who is a cosmetologist, I was motivated to create an online website to help her promote her business and also find new clients. Loann had been struggling to work with freelancer developers in the past and did not want to utilize platforms such as squarespace or wix. I decided I wanted to offer my help and create an portfolio website for her clients and prospective clients to connect with Loann. During our meetings, Loann had wanted a website that only included the most basic information as well as a way for her clients to set up appointments through SMS. She also wanted her pictures from clients as well as positive client reviews displayed on the website. While creating this portfolio, I utilized media queries to ensure the website would be responsive to provide client on a phone or laptop to be able to make appointments with Loann. I utilized Twilio to create a form that would send Loann appointment requests via a twilio phone number with client information for her to resond back to. Lastly, I decided on using Google's Firestore Database so I can eventually connect to Google's Business API to always have the most recent and newest google reviews and photos to display on Loann's portfolio.",
+      "challenges": "Creating my own responsive components was a challenge that took more time and research while developing this project. I wanted to better understand how the UI components from libraries I have used in the past work, so I decided on creating my own responsive components. I started with the navigation bar that would transition to a hamburger menu at a certain breakpoint and then I utilized Flex-box and grid to ensure the columns within the application would seamlessly adjust on various viewports. I learned a great deal about the importance of responsiveness and accessibility while creating this project because I felt a deeper sense of responsibility to Loann to make sure her clients & prospective clients could easily use this website while maintaining a good user experience.",
+      "stretch": ["Set up AWS S3 bucket for Client to add images to website database", "Create an separate interface for client to approve incoming reviews & images to display"],
+      "github": "https://github.com/nurselaine/salon-front-end",
+      "site": "https://hair-by-loann.netlify.app",
+      "active": true
+    },
+    { 
+      "project_name": "KanBrain", 
+      "project_desc": "Productivity Tool for Project Planning", 
+      "project_src": "./assets/img/trello-icon.png",
+      "images": ["./assets/img/trello-board.png", "./assets/img/trello-board-2.png", "./assets/img/trello-board-3.png"],
+      "tech": ["JavaScript", "React", "HTML", "CSS", "Google Firestore", "React Router", "Bootstrap", "Express", "Restful API", "Render"],
+      "challenges": "I wanted to re-create Trello using the concepts I had learned in my intro to web development course. While planning and creating data models, I found the limitations of using a non-relational database for my initial intention. After researching and understanding the pros and cons to using both relational database and NoSQL databases, I knew that I would still be able to use a NoSQL database; however, I would not be able to make complex transactions that a relational database would allow. I decided that I wanted to solidify my understanding and usage of non-relational databases and implemented Google Firestore's non-relational database. Unlike trello, Kanbrain utilizes a edit and save button due to the way I organized my non-relational database. I plan on implementing postgreSQL relational database on top of the current database, so I can transition my data into tables that I can make joins and more complex transactions between!",
+      "info": "Planning has always been an essential skill that I deeply value and aim to perfect. I built this Trello inspired application for users to plan out robust projects with their teammates without the expensive payment plans! On the backend I utilized a REST API, CRUD operations, and Google's Firestore non-relational database to store project boards and task cards.",
+      "stretch": ["Implement Browser Router to create a new Kanban board", "Implement PostgreSQL database on the backend and re-route tasks, columns, and project data accordingly", "Incorporate Socket.io library to allow multiple teammates to view/edit a shared project", "Add Basic Authentication using Base-64 and Bcrypt and implement Bearer Authentication to validate returning users", "Add a page to access all previously create Kanban boards"],
+      "github": "https://github.com/nurselaine/my-kanban-front-end/tree/main/my-kanban-front-end",
+      "site": "https://nurselaine-brain.netlify.app",
+      "active": false
+    },
+    { 
+      "project_name": "Calendme", 
+      "project_desc": "Events Sheduler to Share With Friends", 
+      "project_src": "./assets/img/calendar.png",
+      "tech": ["JavaScript", "React", "HTML", "CSS", "Express", "RESTful API", "Axios", "MongoDB", ""],
+      "images": ["./assets/img/calendar-1.png", "./assets/img/calendar-2.png", "./assets/img/calendar-3.png"],
+      "info": "The calendar is one of my favorite applications to use and keep track of my upcoming plans. The functionality of Calendme was based on Google's Calendar application. Features of this application were built using a RESTful API, CRUD operations, MongoDB, and mongoose ORM.",
+      "stretch": ["Add a Sign in modal when user opens app", "Incorporate Weather API to display forecast for each day of current week", "Incorporate Role Based Access control so users can only read current events and admins can create, update, and delete events"],
+      "github": "https://github.com/nurselaine/my-calendar",
+      "site": "https://my-calendar-app-nurselaine.netlify.app",
+      "active": true
+    }
+  ]
+}
