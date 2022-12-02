@@ -3,13 +3,13 @@ $BackgroundColor: #f0f8e3;
 
 #portfolio{
   background: $BackgroundColor;
-  padding: 5rem;
+  // padding: 5rem;
+  position: relative;
 
   .project-desc{
     display: flex;
     flex-wrap: wrap;
     margin: auto;
-    min-width: 400px;
   }
 
   h2.details{
@@ -19,7 +19,7 @@ $BackgroundColor: #f0f8e3;
       // 12px 12px 0 var(--detail-quinary)
     font-size: 2rem;
     display: block;
-    padding: 2rem;
+    padding-top: 5rem;
     text-align: center;
   }
 }

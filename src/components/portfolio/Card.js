@@ -1,9 +1,7 @@
 import React, { useState } from 'react';
-import { Box, Button, createStyles, Flex, Modal, Grid } from '@mantine/core';
+import { Box, Button, createStyles, Grid } from '@mantine/core';
 import './Portfolio.scss';
 import ProjectModal from './ProjectModal';
-import data from '../../data/project_data.json';
-import { When } from 'react-if';
 
 const useStyles = createStyles((theme, _params) => ({
   box: {
@@ -43,23 +41,25 @@ export default function Card({ project }) {
   return (
     <>
       <Box className={classes.box}>
-        <Grid width="100%">
-          <Grid.Col xs={2} sm={2} md={2} lg={3}>
+        <Grid>
+          <Grid.Col xs={4} sm={2} md={2} lg={3}>
             <img
               src={project.project_src}
               alt={project.name}
-              height="75px"
-              width="75px"
+              height="50"
+              width="50"
             />
           </Grid.Col>
-          <Grid.Col className="project-desc" xs={6} sm={10} md={10} lg={9} >
-            <article className={classes.text_Con} >
-              <h4 className={classes.text}>{project.project_name}</h4>
-              <p className={classes.desc}>{project.project_desc}</p>
-            </article>
-            <Box className={classes.button}>
-              <Button color="red" radius="lg" sx={{width: '5rem'}} onClick={() => setOpened(true)}>view</Button>
-            </Box>
+          <Grid.Col className="project-desc" xs={8} sm={10} md={10} lg={9} >
+            <div style={{display: 'flex', width: '100%'}}>
+              <article className={classes.text_Con} >
+                <h4 className={classes.text}>{project.project_name}</h4>
+                <p className={classes.desc}>{project.project_desc}</p>
+              </article>
+              <Box className={classes.button}>
+                <Button color="red" radius="lg" sx={{width: '5rem'}} onClick={() => setOpened(true)}>view</Button>
+              </Box>
+            </div>
           </Grid.Col>
           {/* <When condition={opened === true}> */}
             <ProjectModal 

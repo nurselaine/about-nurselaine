@@ -1,0 +1,87 @@
+$BackgroundColor: #f0f8e3;
+
+#background{
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  .parallax-wrap {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+  
+  
+  
+    img{
+      width: 100%;
+      height: 100%;
+    }
+  }
+  // .parallax-wrap div.parallax-wrap {
+  //   position: absolute;
+  //   height: 30px;
+  //   width: 30px;
+  //   border-radius: 100%;
+  // }
+  
+  .parallax-wrap div.parallax-img:nth-child(1) {
+    top: 80%;
+    left: 5%;
+    z-index: 3;
+  }
+  
+  .parallax-wrap div.parallax-img:nth-child(2) {
+    top: 40%;
+    left: 15%;
+    z-index: 3;
+  }
+  .parallax-wrap div.parallax-img:nth-child(3) {
+    top: 10%;
+    left: 90%;
+    z-index: 3;
+  }
+  .parallax-wrap div.parallax-img:nth-child(4) {
+    top: 60%;
+    left: 90%;
+    z-index: 3;
+  }
+  .parallax-wrap div.parallax-img:nth-child(5) {
+    top: 50%;
+    left: 80%;
+    z-index: 3;
+  }
+  
+  .parallax-wrap div.parallax-img:nth-child(6) {
+    top: 5%;
+    left: 1%;
+    z-index: 3;
+  }
+  .parallax-wrap div.parallax-img:nth-child(7) {
+    top: 0%;
+    left: 30%;
+    z-index: 3;
+  }
+  .parallax-wrap div.parallax-img:nth-child(8) {
+    top: 90%;
+    left: 80%;
+    z-index: 1;
+  }
+  .parallax-wrap div.parallax-img:nth-child(9) {
+    top: 10%;
+    left: 55%;
+    z-index: 1;
+  }
+  .parallax-wrap div.parallax-img:nth-child(10) {
+    top: 60%;
+    left: 1%;
+    z-index: 1;
+  }
+}
+
+

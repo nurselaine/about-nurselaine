@@ -4,6 +4,7 @@ import data from '../../data/project_data.json';
 import { send } from "emailjs-com";
 
 import './Contact.scss';
+import Social from "./Social";
 
 const useStyles = createStyles((theme) => ({
   button: {
@@ -55,22 +56,8 @@ export default function Contact() {
     <div id="contact">
       <section className="content">
         <h2 className="text_shadows">Get In Touch</h2>
-        <section id='contact'>
-          <Box style={{ display: 'flex', flexDirection: 'row', flexwrap: 'wrap', justifyContent: 'space-evenly', width: '50%', margin: 'auto' }}>
-            {
-              data.contact.map((social, i) => (
-                <Image
-                  src={social}
-                  height={40}
-                  width={40}
-                  alt="social"
-                  key={`social-${i}`}
-                />
-              ))
-            }
-          </Box>
-        </section>
       </section>
+      <Social />
       <form id="form">
         <Input.Wrapper
           id='name-input'

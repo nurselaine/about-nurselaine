@@ -1,41 +1,50 @@
 import React from "react";
-import Navbar from "../navbar/Navbar";
+import { Box, Grid, Image, Space, Text } from "@mantine/core";
 import './About.scss';
 
 export default function About() {
-  const parallax = (e) => {
-    document.querySelectorAll(".about-parallax span").forEach((shift) => {
-      const position = shift.getAttribute("value");
-      const x = (window.innerWidth - e.pageX * position) / 90;
-      const y = (window.innerHeight - e.pageY * position) / 90;
-
-      shift.style.transform = `translateX(${x}px) translateY(${y}px)`;
-    });
-  }
-
 
   return (
-    <section>
-      <Navbar />
-      <div className="about-parallax" onMouseMove={parallax}>
-        {/* <div value="-15"><img src="../../../public/img/octagon.png" alt=""/></div> */}
-        <span value='-5'></span>
-        <span value="5"></span>
-        <span value="-5"></span>
-        <span value="1"></span>
-        <span value="10"></span>
-        <span value="1" ></span>
-        <span value="-5" ></span>
-        <span value='1'></span>
-        <span value="-15"></span>
-        <span value="1"></span>
-        <span value="20"></span>
-        <span value="-15"></span>
-        <span value="2" ></span>
-        <span value="10" ></span>
-        {/* <span value='12' style={{background: 'pink'}}></span> */}
-        <h2>About Me</h2>
-      </div>
-    </section>
+    <>
+    <Grid id="about" ta='center' ml='auto' mr='auto' mt='md' w="60%" sx={(theme) => ({zIndex: 4, backgroundColor: 'rgba(255,255,255,0.5)', borderRadius: 5})}>
+      <Grid.Col sm={4} md={6} lg={6} m='auto'>
+        <Image
+          src='./assets/img/profilepic.jpg'
+          alt="profile picture"
+          height='300'
+          width='300'
+          radius="md"
+        />
+      </Grid.Col>
+      <Grid.Col sm={4} md={6} lg={6}>
+        <Box width="60%" mah='300px' ml="sm">
+          <Text ta="left" mah='300px' sx={{overflowY: 'scroll'}} fz="md">
+            <Text
+              fw={500}
+              fz="xl"
+            >
+              Hello I'm Elaine.
+            </Text>
+            I'm a critical care nurse and aspiring software
+            engineer! After graduating with my Bachelor of
+            Science in Nursing from Seattle Pacific university,
+            I decided to explore computer science. After taking
+            software development classes at my local college, I
+            knew I wanted to pursue engineering as a career, so
+            I enrolled in Code Fellows Web Development focused
+            bootcamp. Transitioning from the nursing feild has
+            been full of exciting challenges, and I've been able
+            to find an amazing community within Women Who Code's
+            Seattle Chapter as a volunteer!
+            <Space h="md" />
+            Currently, I'm looking forward to gaining experience
+            as a software engineer by continuing to learn new
+            programming languages and technologies as I pursue my
+            MSCS through Seattle University!
+          </Text>
+        </Box>
+      </Grid.Col>
+    </Grid>
+    </>
   )
 }

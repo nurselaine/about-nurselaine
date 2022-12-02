@@ -2,7 +2,7 @@ import React from "react";
 import { Grid } from '@mantine/core';
 import data from '../../data/project_data.json'
 import './Portfolio.scss';
-
+import Background from "../../UI/Background";
 import Card from "./Card";
 
 export default function Portfolio() {
@@ -10,11 +10,12 @@ export default function Portfolio() {
 
   return (
     <section id="portfolio">
+      <Background />
       <h2 className="details">PROJECTS</h2>
-      <Grid width="100%" p="lg" sx={{justifyContent: 'center'}}>
+      <Grid width="100%" p="lg" sx={{justifyContent: 'center', margin: '0'}}>
           {
             project_data.map((project, i) => (
-              <Grid.Col md={12} lg={5} key={`project-col-${i}`}>
+              <Grid.Col md={12} lg={5} key={`project-col-${i}`} sx={{zIndex: '4'}} p="md">
               <Card
                 project={project}
                 key={`project-${i}`}

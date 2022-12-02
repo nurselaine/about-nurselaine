@@ -6,13 +6,13 @@
 ### Welcome to my portfolio
   I've linked some of my projects on github here
   - Hair By Loann
-  - Brain
+  - KanBrain
   - Slack n' Snack
-  - Meal Wheel
-  - Simple Virtual Store
+  - Calendme
+  - WenJobs
 
 ### Run Locally
-- npm i 
+- npm i @mantine/core @mantine/carousel react-if sass email-js
 
 #### Libraries & Resources
 - React Browser Router for page navigation

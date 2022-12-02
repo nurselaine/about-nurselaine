@@ -42,7 +42,7 @@
       "project_name": "Calendme", 
       "project_desc": "Events Sheduler to Share With Friends", 
       "project_src": "./assets/img/calendar.png",
-      "tech": ["JavaScript", "React", "HTML", "CSS", "Express", "RESTful API", "Axios", "MongoDB", ""],
+      "tech": ["JavaScript", "React", "HTML", "CSS", "Express", "RESTful API", "Axios", "MongoDB"],
       "images": ["./assets/img/calendar-1.png", "./assets/img/calendar-2.png", "./assets/img/calendar-3.png"],
       "info": "The calendar is one of my favorite applications to use and keep track of my upcoming plans. The functionality of Calendme was based on Google's Calendar application. Features of this application were built using a RESTful API, CRUD operations, MongoDB, and mongoose ORM.",
       "stretch": ["Add a Sign in modal when user opens app", "Incorporate Weather API to display forecast for each day of current week", "Incorporate Role Based Access control so users can only read current events and admins can create, update, and delete events"],
@@ -51,6 +51,6 @@
       "active": true
     }
   ],
-  "skills": ["./assets/img/js.png", "./assets/img/java.png", "./assets/img/react.png","./assets/img/node-js.png", "./assets/img/html.png", "./assets/img/css.png", "./assets/img/postgre.png","./assets/img/mongodb.png", "./assets/img/socketio.png", "./assets/img/heroku.png", "./assets/img/git.png" ],
-  "contact": ["./assets/img/profile.png", "./assets/img/linkedin.png", "./assets/img/gmail.png", "./assets/img/github.png"]
+  "skills": ["./assets/img/js.png", "./assets/img/java.png", "./assets/img/react.png","./assets/img/node-js.png", "./assets/img/html.png", "./assets/img/css.png", "./assets/img/postgre.png","./assets/img/mongodb.png", "./assets/img/socketio.png", "./assets/img/heroku.png", "./assets/img/git.png", "./assets/img/aws.png"  ],
+  "contact": [["./assets/img/profile.png", "https://docs.google.com/document/d/1YtpV5Ivb1SpYz9_1Hwg3N4x5pQSauT-QWL_xlcQqYAo/edit?usp=sharing"], ["./assets/img/linkedin.png", "https://www.linkedin.com/in/nurselaine/"], ["./assets/img/gmail.png", "mailto:Elaine.t.huynh@gmail.com"], ["./assets/img/github.png", "https://github.com/nurselaine"]]
 }
