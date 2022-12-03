@@ -1,0 +1,28 @@
+{
+  "Navbar": {
+    "Links": ["Home", "About", "Portfolio"]
+  },
+  "Home": {
+    "Name": "Elaine Huynh",
+    "Intro": "Full-Stack Software Engineer with experience building web-technologies."
+  },
+  "About": {
+    "Bio": "Hello! My name is Elaine, I'm full-stack software engineer with an interest in web technologies. While I was working as a COVID ICU nurse in 2020, I started teaching myself how to build websites as a new hobby. Now I make web applications for my friends, family, and small businesses. I decided to pivot my career path and dive deeper into solidfying my fundementals in web development. Outside of developing and nursing, I spend my free time reading about naturopathic health, exploring new restaurants in Seattle, and most importantly is time with my family."
+  }, 
+  "Portfolio": {
+    "Projects": [
+      {
+        "Title": "Calendar",
+        "About": "Inspired by my own calendar app, I wanted to recreate an app to share with my friends and family. This way, we can add events to this calendar and stay up-to-date on our upcoming plans together.",
+        "Date": "July 2020"
+      },
+      {
+        "Title": "Loann's Salon",
+        "About": "A website created to promote online presence for a cosmetologist. "
+      }
+    ]
+  },
+  "Contact": {
+
+  }
+}
