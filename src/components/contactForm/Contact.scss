@@ -24,6 +24,8 @@ $BackgroundColor: #f0f8e3;
 #contact{
   background-color: $BackgroundColor;
   padding: 30px;
+  position: relative;
+
 
   .content {
     display: flex;
@@ -44,17 +46,20 @@ $BackgroundColor: #f0f8e3;
     color: var(--color-primary);
     animation: shadows 1.2s ease-in infinite, move 1.2s ease-in infinite;
     letter-spacing: 0.4rem;
+    z-index: 4;
   }
   
   #form{
     width: 60%;
     margin: auto;
     padding-top: 1.5rem;
+    z-index: 4;
 
     
     label{
       display: block;
       text-align: center;
+      z-index: 4;
     }
   }
   @media screen and (max-width: 600px){

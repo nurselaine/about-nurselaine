@@ -8,6 +8,10 @@ import './Navbar.scss';
 export default function Navbar() {
   const [show, setShow] = useState(false);
 
+  const handleCloseModal = () => {
+    setShow(false);
+  }
+
   return (
     <>
       <ul id='navbar'>
@@ -32,9 +36,10 @@ export default function Navbar() {
           </a>
         </li>
       </ul>
-      <When condition={show === true}>
-        <About />
-      </When>
+        <About 
+          opened={show}
+          handleCloseModal={handleCloseModal}
+        />
     </>
   )
 }

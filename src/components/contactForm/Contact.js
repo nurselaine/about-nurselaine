@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import { Box, Button, createStyles, Image, Input, Textarea } from "@mantine/core";
-import data from '../../data/project_data.json';
+import { Button, createStyles,  Input, Textarea } from "@mantine/core";
 import { send } from "emailjs-com";
 
 import './Contact.scss';
 import Social from "./Social";
+import Background from "../../UI/Background";
 
 const useStyles = createStyles((theme) => ({
   button: {
@@ -14,6 +14,9 @@ const useStyles = createStyles((theme) => ({
   },
   input: {
     spacing: 'var(--mantine-spacing-sm)'
+  },
+  inputWrapper: {
+    zIndex: 4,
   }
 }))
 
@@ -54,6 +57,7 @@ export default function Contact() {
 
   return (
     <div id="contact">
+      <Background />
       <section className="content">
         <h2 className="text_shadows">Get In Touch</h2>
       </section>
@@ -63,6 +67,7 @@ export default function Contact() {
           id='name-input'
           label="Full Name"
           size="lg"
+          className={classes.inputWrapper}
         >
           <Input
             type="text"
@@ -72,12 +77,14 @@ export default function Contact() {
             size="lg"
             onChange={(e) => setName(e.target.value)}
             m="md"
+            className={classes.inputWrapper}
           />
         </Input.Wrapper>
         <Input.Wrapper
           id="email-input"
           label="Email"
           size="lg"
+          className={classes.inputWrapper}
         >
           <Input
             type="text"
@@ -87,6 +94,7 @@ export default function Contact() {
             size="lg"
             onChange={(e) => setEmail(e.target.value)}
             m="md"
+            className={classes.inputWrapper}
           />
         </Input.Wrapper>
         <Textarea

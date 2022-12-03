@@ -1,5 +1,5 @@
 import React from "react";
-import { Badge, Box, Button, createStyles, Image, Modal, Space, Text } from '@mantine/core';
+import { Badge, Box, Button, createStyles, Image, Modal, ScrollArea, Space, Text } from '@mantine/core';
 import { Else, If, Then, When } from "react-if";
 
 const useStyles = createStyles((theme) => ({
@@ -39,6 +39,7 @@ export default function ProjectModal({ project, opened, handleCloseModal }) {
   const { classes } = useStyles();
   return (
     <>
+
       <Modal
         opened={opened}
         withCloseButton={false}
@@ -56,20 +57,22 @@ export default function ProjectModal({ project, opened, handleCloseModal }) {
               <Badge key={`badge-${i}`} m="xs" variant="gradient" gradient={{ from: '#ed6ea0', to: '#ec8c69', deg: 35 }} >{tech}</Badge>
             ))
           }
-          <div id="slide" style={{ display: 'flex', width: 'auto', height: 'auto', overflowX: 'scroll', overflowY: 'hidden', whiteSpace: 'nowrap' }}>
-            {
-              project.images.map((image, i) => (
+          <ScrollArea>
+            <div id="slide" style={{ display: 'flex', width: 'auto', height: 'auto', overflowY: 'hidden', whiteSpace: 'nowrap' }}>
+              {
+                project.images.map((image, i) => (
 
-                <Image
-                  src={image}
-                  alt={project.desc}
-                  width={600}
-                  height={300}
-                  m="sm"
-                />
-              ))
-            }
-          </div>
+                  <Image
+                    src={image}
+                    alt={project.desc}
+                    width={600}
+                    height={300}
+                    m="sm"
+                  />
+                ))
+              }
+            </div>
+          </ScrollArea>
           <div style={{ display: 'flex', flexDirection: 'row', margin: '1rem', justifyContent: 'space-evenly' }}>
             <If condition={project.active === false}>
               <Then>
@@ -115,6 +118,7 @@ export default function ProjectModal({ project, opened, handleCloseModal }) {
           </section>
         </Box>
       </Modal>
+
     </>
   )
 }

@@ -52,5 +52,11 @@
     }
   ],
   "skills": ["./assets/img/js.png", "./assets/img/java.png", "./assets/img/react.png","./assets/img/node-js.png", "./assets/img/html.png", "./assets/img/css.png", "./assets/img/postgre.png","./assets/img/mongodb.png", "./assets/img/socketio.png", "./assets/img/heroku.png", "./assets/img/git.png", "./assets/img/aws.png"  ],
-  "contact": [["./assets/img/profile.png", "https://docs.google.com/document/d/1YtpV5Ivb1SpYz9_1Hwg3N4x5pQSauT-QWL_xlcQqYAo/edit?usp=sharing"], ["./assets/img/linkedin.png", "https://www.linkedin.com/in/nurselaine/"], ["./assets/img/gmail.png", "mailto:Elaine.t.huynh@gmail.com"], ["./assets/img/github.png", "https://github.com/nurselaine"]]
+  "contact": [["./assets/img/profile.png", "https://docs.google.com/document/d/1YtpV5Ivb1SpYz9_1Hwg3N4x5pQSauT-QWL_xlcQqYAo/edit?usp=sharing"], ["./assets/img/linkedin.png", "https://www.linkedin.com/in/nurselaine/"], ["./assets/img/gmail.png", "mailto:Elaine.t.huynh@gmail.com"], ["./assets/img/github.png", "https://github.com/nurselaine"]],
+  "aboutme": {
+    "name": "Elaine",
+    "intro": "I'm a critical care nurse and aspiring software engineer! After graduating with my Bachelor of Science in Nursing from Seattle Pacific university, I decided to explore computer science. After taking software development classes at my local college, I knew I wanted to pursue engineering as a career, so I enrolled in Code Fellows Web Development focused bootcamp. Transitioning from the nursing feild has been full of exciting challenges, and I've been able to find an amazing community within Women Who Code's Seattle Chapter as a volunteer!", 
+    "description": "Currently, I'm looking forward to gaining experience as a software engineer by continuing to learn new programming languages and technologies as I pursue my MSCS through Seattle University!",
+    "picture": ["./assets/img/profilepic.jpg", "./assets/img/adventure.jpg", "./assets/img/wilbur.jpg"]
+  }
 }

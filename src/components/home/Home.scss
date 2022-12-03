@@ -30,7 +30,7 @@ $Titlefont: 'Anton', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-
 }
 
 #home {
-  height: 80vh;
+  height: 100vh;
   width: 100vw;
   background-color: $BackgroundColor;
 }
@@ -48,6 +48,7 @@ $Titlefont: 'Anton', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-
     // 12px 12px 0 var(--detail-quinary)
     font-size: 2rem;
     display: block;
+    z-index: 4;
     text-align: center;
   }
 }
@@ -69,7 +70,10 @@ $Titlefont: 'Anton', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-
 
 #skills {
   background: $BackgroundColor;
+  position: relative;
+  z-index: 4;
   text-align: center;
+  height: 100vh;
 
 
   h2.details {
