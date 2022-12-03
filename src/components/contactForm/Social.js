@@ -7,7 +7,7 @@ export default function Social(){
     <Box style={{ display: 'flex', flexDirection: 'row', flexwrap: 'wrap', justifyContent: 'space-evenly', width: '50%', margin: 'auto' }}>
       {
         data.contact.map((social, i) => (
-          <a href={social[1]} target="_blank" rel='noreferrer'>
+          <a href={social[1]} target="_blank" rel='noreferrer' style={{padding: '1rem'}}>
             <Image
               src={social[0]}
               height={40}
