@@ -1,7 +1,7 @@
 # Hello! My name is Elaine
 
 ## Visit Deployed Site
-- Coming soon!
+- [nurselaine.com](www.nurselaine.com)
 
 ### Welcome to my portfolio
   I've linked some of my projects on github here
