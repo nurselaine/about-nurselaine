@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 import About from "../about/About";
-import { Text } from "@mantine/core";
-import { When } from "react-if";
 
 import './Navbar.scss';
 

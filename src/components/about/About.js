@@ -13,7 +13,7 @@ export default function About({ opened, handleCloseModal }) {
     size="lg"
     p="md"
     >
-      <Box sx={{ height: '60vh', overflowY: "scroll", overflowX: 'hidden' }}>
+      <Box sx={{ height: '60vh', width: '80vw', overflowY: "scroll", overflowX: 'hidden' }}>
         <Text fw={500} fz="xl" >Hi! I'm {data.aboutme.name}👋</Text>
         <Space h="md" />
         <ScrollArea>

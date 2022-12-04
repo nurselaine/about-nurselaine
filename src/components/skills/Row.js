@@ -17,8 +17,8 @@ export default function Row({skills}) {
           skills.map((skill, i) => (
             <Image
               src={skill}
-              height={60}
-              width={60}
+              height="calc(2rem + 5vw)"
+              width="calc(2rem + 5vw)"
               alt="skill"
               key={`skill-${i}`}
               sx={{zIndex:4, padding: '1rem'}}
