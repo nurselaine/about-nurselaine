@@ -8,14 +8,13 @@ export default function About({ opened, handleCloseModal }) {
   return (
     <Modal
     opened={opened}
-    withCloseButton={false}
     onClose={() => handleCloseModal(false)}
-    size="lg"
+    size="80%"
     p="md"
+    title={`Hello! My name is ${data.aboutme.name} 👋`}
+    className="modal-container"
     >
-      <Box sx={{ height: '60vh', width: '80vw', overflowY: "scroll", overflowX: 'hidden' }}>
-        <Text fw={500} fz="xl" >Hi! I'm {data.aboutme.name}👋</Text>
-        <Space h="md" />
+      <Box mah="80vh" sx={{ overflowY: "scroll", overflowX: 'hidden' }}>
         <ScrollArea>
         <div id="slide" style={{ display: 'flex', width: 'auto', height: 'auto', overflowY: 'hidden', whiteSpace: 'nowrap' }}>
             {

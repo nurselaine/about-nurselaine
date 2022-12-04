@@ -109,6 +109,7 @@ export default function Contact() {
           className={classes.input}
           onChange={(e) => setMessage(e.target.value)}
           m="md"
+          sx={{zIndex: 4}}
         />
       </form>
       <Button

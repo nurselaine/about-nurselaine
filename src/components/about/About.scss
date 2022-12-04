@@ -9,3 +9,32 @@
   margin: auto;
   margin-top: 30px;
 }
+
+#mantine-r1-title {
+  font-weight: 500;
+
+  font-size: calc(0.5rem + 1vw);
+}
+
+.mantine-Modal-modal {
+  width: 95%;
+  
+}
+
+.modal-container{
+  margin:auto;
+}
+
+
+
+@media (min-width: 600px){
+  .modal-container {
+    width: 75%;
+  }
+}
+
+@media (min-width: 1200px){
+  .modal-container {
+    width: 55%;
+  }
+}
