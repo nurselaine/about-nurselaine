@@ -101,6 +101,14 @@ export default function ProjectModal({ project, opened, handleCloseModal }) {
               <h4 className={classes.header}>More Info</h4>
               <Text className={classes.text}>{project.info}</Text>
             </article>
+            <article>
+              <h4 className={classes.header}>Features</h4>
+              <ul style={{ margin: '1rem', fontFamily: 'Arial' }}>
+                {
+                  project.features.map((feature, i) => (<li key={`stretch-${i}`}><Text sx={{ display: 'list-item' }}>{feature}</Text><Space h="sm" /></li>))
+                }
+              </ul>
+            </article>
             <When condition={typeof project.challenges === 'string'}>
               <article>
                 <h4 className={classes.header}>Challenges</h4>
