@@ -19,18 +19,22 @@
   */
 }
 
+  
 #navbar {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  width: 90%;
   justify-content: center;
   z-index: 4;
+  margin: auto;
 
   li {
     margin-top: 0.5rem;
   }
 
   li a {
-    margin: 1rem;
+    margin: 0.5rem;
     text-decoration: none;
     font-size: calc(0.5rem + 1vw);;
     font-family: bungee, sans-serif;
@@ -38,6 +42,10 @@
     text-shadow: 3px 3px 0 var(--color-quinary), 6px 6px 0 var(--color-quanternary);
     display: block;
     text-align: center;
+
+    @media only screen and (min-width: 500px) {
+      margin: 1rem;
+    }
 
     &a:visited {
       text-decoration: none;

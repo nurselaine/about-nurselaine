@@ -10,7 +10,7 @@
       "features": ["Responsive components using Ant UI", "Simple design and navigation using React Router", "Authentication & Authorization step using Auth0", "Database management to store user information & connections", "Express API server updating job board every 12 hours with new job listings", "Filtering functionalities", "Connections page for users to upload LinkedIn connections CSV"],
       "stretch": ["Utilize PostgreSQL database to manage company data with user connections", "Utilize AngelList & Crunchbase APIs to display data on the companies within the database", "Request for LinkedIn Full-Profile access permissions to include a user's first, second, and third degree connections within the targeted job search"],
       "github": "https://github.com/Wen-Jobs",
-      "site": "www.wenjobs.xyz",
+      "site": "https://wenjobs.xyz/",
       "active": true
     },
     {

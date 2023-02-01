@@ -14,7 +14,9 @@ export default function Home() {
         <article id='home' className='content'>
           <h2 className='text_shadows'>I'm Elaine</h2>
           <p className='details'>I'm a Full-Stack Engineer</p>
-          <Navbar />
+          <div>
+            <Navbar />
+          </div>
         </article>
       <Skills />
       <Portfolio />
