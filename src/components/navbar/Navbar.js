@@ -29,6 +29,11 @@ export default function Navbar() {
           </a>
         </li>
         <li>
+          <a href='/assets/resume.pdf' target="_blank">
+            Resume
+          </a>
+        </li>
+        <li>
           <a href='#contact'>
             Contact
           </a>
