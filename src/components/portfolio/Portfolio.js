@@ -15,7 +15,7 @@ export default function Portfolio() {
       <Grid width="100%" p="lg" sx={{justifyContent: 'center', margin: '0'}}>
           {
             project_data.map((project, i) => (
-              <Grid.Col md={12} lg={5} key={`project-col-${i}`} sx={{zIndex: '4'}} p="md">
+              <Grid.Col xs={5} md={5} lg={5} key={`project-col-${i}`} sx={{zIndex: '4'}} p="md">
               <Card
                 project={project}
                 key={`project-${i}`}

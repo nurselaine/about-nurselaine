@@ -42,7 +42,7 @@ export default function Card({ project }) {
     <>
       <Box className={classes.box}>
         <Grid>
-          <Grid.Col xs={4} sm={2} md={2} lg={3}>
+          <Grid.Col sm={2} md={2} lg={2}>
             <img
               src={project.project_src}
               alt={project.name}
