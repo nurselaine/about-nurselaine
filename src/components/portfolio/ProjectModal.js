@@ -42,7 +42,6 @@ export default function ProjectModal({ project, opened, handleCloseModal }) {
 
       <Modal
         opened={opened}
-        withCloseButton={false}
         onClose={() => handleCloseModal(false)}
         size="80%"
       >
