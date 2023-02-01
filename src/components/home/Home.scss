@@ -53,6 +53,10 @@ $Titlefont: 'Anton', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-
   }
 }
 
+#navbar-div{
+  z-index: 4;
+}
+
 .text_shadows {
   text-shadow: 3px 3px 0 var(--color-secondary), 6px 6px 0 var(--color-tertiary),
     9px 9px var(--color-quaternary), 12px 12px 0 var(--color-quinary);
